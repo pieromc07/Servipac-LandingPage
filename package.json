@@ -1,0 +1,16 @@
+{
+  "name": "landing-page-servipac",
+  "version": "0.0.1",
+  "description": "Landing page of Servipac",
+  "main": "index.js",
+  "repository": "https://github.com/pieromc07/Servipac-LandingPage.git",
+  "author": "servipac web development team",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node src/index.js",
+    "build": ""
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
