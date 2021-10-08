@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+:root {
+    --primario: #f6de16;
+    --primary2: #d1bd18;
+    --secundario: #005ea5;
+    --body: #acaeb2;
+    --white: #f4f4f4;
+    --black: #0e1010;
+    --h1: 700 3rem/normal Lato;
+    --h2: 700 2.25rem/normal Lato;
+    --h3: 400 1.75rem/normal Lato;
+    --h6: 400 1.125rem/normal Lato;
+    
+    --lead: 400 1.375rem/9.375rem Lato;
+    --body: 400 1rem/9.375rem Lato;
+    --subtitulo: 700 1.125rem/normal Lato;
+
+    --h1-phone: 900 2rem/normal Lato;
+    --subtitulo-phone: 700 0.875rem/normal Lato;
+    --parrafo-phone: 400 0.875rem/normal Lato;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--black);
+    background-color: var(--white);
+    font-family: 'Lato', sans-serif;
+}
+
+.Header-main {
+    width: 100%;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secundario);
+    height: 56px;
+    backdrop-filter: blur(20px);
+}
+
+.Header a {
+    text-decoration: none;
+    color:  var(--white);
+
+}
+
+a, a:link {
+    text-decoration: none !important;
+    color: #95c0ba;
+    text-decoration: none;
+}
+
+/* visited link */
+
+a:visited {
+    color: #adc9c5;
+}
+
+/* mouse over link */
+
+a:hover {
+    color: #75e4d3;
+}
+
+/* selected link */
+
+a:active {
+    color: #75e4d3;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.Main-loading {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
