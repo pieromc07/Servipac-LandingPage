@@ -18,6 +18,8 @@
     --h1-phone: 900 2rem/normal Lato;
     --subtitulo-phone: 700 0.875rem/normal Lato;
     --parrafo-phone: 400 0.875rem/normal Lato;
+
+    --border-radius: 4px;
 }
 *{
     box-sizing: border-box;
@@ -29,23 +31,66 @@ body {
     padding: 0;
     color: var(--black);
     background-color: var(--white);
+    font-size: 16px;
     font-family: 'Lato', sans-serif;
 }
 
-.Header-main {
+.header .Header-main {
     width: 100%;
-    padding: 0 16px;
+    height: 56px;
+    padding: 0 0.5rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     background-color: var(--secundario);
-    height: 56px;
     backdrop-filter: blur(20px);
+    transition: all ease 0.5s;
+}
+.header.active .Header-main {
+    height: 100vh;
+    justify-content: start;
+    flex-direction: column;
+    background-color: var(--secundario);
+}
+.Header-logo{
+    width: 100%;
+    min-height: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
 }
 
-.Header a {
+.header .Header-navs{
+    display: none;
+}
+.header.active .Header-navs{
+    display: grid;
+    grid-gap: 12px;
+    margin-top: 10%;
+}
+.header.active .Header-nav{
+    display: inline;
+    display: flex;
+    align-items: center;  
+    background: transparent;
+    padding: 16px;
+    border-radius: var(--border-radius) ;
+    color:var(--white);
+}
+.header .Header-nav:hover{
+    background: var(--white);
+    color: var(--secundario);
+}
+.Header-nav{
+    display: none;
+}
+.Header-nav a {
     text-decoration: none;
     color:  var(--white);
+}
+.Header-nav:hover a {
+    text-decoration: none;
+    color: var(--secundario);
 
 }
 
@@ -97,5 +142,36 @@ a:active {
     }
     100% {
         transform: rotate(360deg);
+    }
+}
+
+
+@media (min-width: 600px) { /* Mayor a 600 */
+    .header .Header-main {
+        width: 100%;
+        height: 72px;
+    }
+    .header .Header-navs{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-auto-flow: column;
+        align-items: center;
+        grid-template-columns: repeat(4,auto );
+        grid-gap: 12px;
+    }
+
+    .Header-logo .menu{
+        display: none;
+    }
+    .header .Header-nav{
+        height: 70%;
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        background: transparent;
+        border-radius: var(--border-radius) ;
+        color:var(--white);
     }
 }
