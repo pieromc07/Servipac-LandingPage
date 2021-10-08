@@ -5,18 +5,20 @@ const Header = ()=>{
                 <h1><a href="#">cervipack</a></h1>
             </div>
             <div class="Header-nav">
-                <a href="#Mision/">Misión y visión</a>
+                <a href="#Mission/">Misión y visión</a>
             </div>
             <div class="Header-nav">
-                <a href="#about/">About</a>
+                <a href="#Services/">Servicios</a>
             </div>
             <div class="Header-nav">
-                <a href="#about/">About</a>
+                <a href="#Team/">Equipo</a>
             </div>
             <div class="Header-nav">
-                <a href="#about/">About</a>
+                <a href="#Contact/">Contáctanos</a>
             </div>
-            
+            <button class="menu" id="btn-open-popup">
+                x
+            </button>
         </div>
     `;
     return view;
