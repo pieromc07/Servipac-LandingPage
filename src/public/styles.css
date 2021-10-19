@@ -228,14 +228,36 @@ body {
 
 /*Team*/
 .Team {
-    display: grid;
+    /* display: grid; */
     place-items: center;
     background-color: var(--white);
-}
-.slider .slider-card{
-    width: 600;
+    margin: 20px 5px;
 }
 
+.team-slider{
+    width: 100%;
+
+}
+.slider-container{
+    height: auto;
+}
+.slider-content{
+    width: 100%;
+    
+}
+.slider-element{
+    height: 100%;
+    height: auto;
+}
+.slider-element img{
+    width: 100%;
+    height: 80%;
+}
+.element-description{
+    background-color: var(--primario);
+    height: 20%;
+   width: 100%;
+}
 /*End Team*/
 a, a:link {
     text-decoration: none !important;

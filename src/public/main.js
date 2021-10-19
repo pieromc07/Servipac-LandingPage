@@ -9,15 +9,32 @@ const team = null || document.getElementById('Team');
 const contact = null || document.getElementById('Contact');
 const footer = null || document.getElementById('Footer');
 
-const main = async () => {  
+const main = async () => {
     header.innerHTML = Header();
     var btnOpenPopup = document.getElementById('btn-open-popup')
-    btnOpenPopup.addEventListener('click', ()=>{
+    btnOpenPopup.addEventListener('click', () => {
         console.log("toogle")
         header.classList.toggle('active');
     })
     team.innerHTML = Team();
     contact.innerHTML = Contact();
     footer.innerHTML = Footer();
+
+    window.addEventListener('load', () => {
+        new Glider(document.querySelector('.slider-content'), {
+            // Mobile-first defaults
+            slidesToShow: 1,
+            rewind:true,
+            dots: '.slider-pag',
+            arrows: {
+                prev: '.slider-prev',
+                next: '.slider-next'
+            },
+        });
+    })
+
 }
+
+
+
 main()
