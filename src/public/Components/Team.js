@@ -7,14 +7,11 @@ const Team = () => {
             <hr class="separator"></hr>
             <div class="team-slider">
                 <div class="slider-conteiner">
-                    <button aria-label="previous" class="slider-prev">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
                     <div class="slider-content">
                         <div class="slider-element">
                             <img class="element-image" src="img/picture-1.jpg" alt="picture 1"/>
                             <div class="element-description">
-                                <h3>dfgsddfsdkhfs</h3>
+                                <h3>MARIA GUIDO</h3>
                                 <p>GERENTE</p>
                                 <ul class="description-social">
                                     <li>
@@ -24,7 +21,7 @@ const Team = () => {
                                         <i class="fab fa-facebook"></i>
                                     </li>
                                     <li>
-                                        <i class="fab fa-instragram"></i>
+                                        <i class="fab fa-instagram"></i>
                                     </li>
                                 </ul>
                             </div>
@@ -42,7 +39,7 @@ const Team = () => {
                                     <i class="fab fa-facebook"></i>
                                 </li>
                                 <li>
-                                    <i class="fab fa-instragram"></i>
+                                    <i class="fab fa-instagram"></i>
                                 </li>
                             </ul>
                             </div>
@@ -60,7 +57,7 @@ const Team = () => {
                                     <i class="fab fa-facebook"></i>
                                 </li>
                                 <li>
-                                    <i class="fab fa-instragram"></i>
+                                    <i class="fab fa-instagram"></i>
                                 </li>
                             </ul>
                             </div>
@@ -78,7 +75,7 @@ const Team = () => {
                                     <i class="fab fa-facebook"></i>
                                 </li>
                                 <li>
-                                    <i class="fab fa-instragram"></i>
+                                    <i class="fab fa-instagram"></i>
                                 </li>
                             </ul>
                             </div>
@@ -97,7 +94,7 @@ const Team = () => {
                                     <i class="fab fa-facebook"></i>
                                 </li>
                                 <li>
-                                    <i class="fab fa-instragram"></i>
+                                    <i class="fab fa-instagram"></i>
                                 </li>
                             </ul>
                             </div>
@@ -115,15 +112,12 @@ const Team = () => {
                                         <i class="fab fa-facebook"></i>
                                     </li>
                                     <li>
-                                        <i class="fab fa-instragram"></i>
+                                        <i class="fab fa-instagram"></i>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <button aria-label="next" class="slider-next">
-                     <i class="fas fa-chevron-right"></i>
-                    </button>
                 </div>
                 <div class="slider-pag"></div>
             </div>
