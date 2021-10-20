@@ -9,6 +9,8 @@ const team = null || document.getElementById('Team');
 const contact = null || document.getElementById('Contact');
 const footer = null || document.getElementById('Footer');
 
+
+
 const main = async () => {
     header.innerHTML = Header();
     var btnOpenPopup = document.getElementById('btn-open-popup')
@@ -21,16 +23,42 @@ const main = async () => {
     footer.innerHTML = Footer();
 
     window.addEventListener('load', () => {
-        new Glider(document.querySelector('.slider-content'), {
+        const glider = new Glider(document.querySelector('.slider-content'), {
             // Mobile-first defaults
             slidesToShow: 1,
-            rewind:true,
+            rewind: true,
             dots: '.slider-pag',
             arrows: {
                 prev: '.slider-prev',
                 next: '.slider-next'
             },
         });
+        function sliderAuto(slider, miliseconds) {
+            const slidesCount = slider.track.childElementCount;
+            let slideTimeout = null;
+            let nextIndex = 1;
+
+            function slide() {
+                slideTimeout = setTimeout(
+                    function () {
+                        if (nextIndex >= slidesCount) {
+                            nextIndex = 0;
+                        }
+                        slider.scrollItem(nextIndex++);
+                    },
+                    miliseconds
+                );
+            }
+
+            slider.ele.addEventListener('glider-animated', function () {
+                window.clearInterval(slideTimeout);
+                slide();
+            });
+
+            slide();
+        }
+
+        sliderAuto(glider, 3000)
     })
 
 }
