@@ -25,13 +25,19 @@ const main = async () => {
     window.addEventListener('load', () => {
         const glider = new Glider(document.querySelector('.slider-content'), {
             // Mobile-first defaults
-            slidesToShow: 1,
-            rewind: true,
+            slidesToShow: 1, //render cantidad
+            slidesToScroll: 0,
+            // rewind: true,
             dots: '.slider-pag',
+            // exactWidth: true,
+            scrollLock: true,
             arrows: {
                 prev: '.slider-prev',
                 next: '.slider-next'
             },
+            responsive:[{
+
+            }]
         });
         function sliderAuto(slider, miliseconds) {
             const slidesCount = slider.track.childElementCount;
