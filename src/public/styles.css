@@ -102,6 +102,8 @@ body {
     padding: 16px;
     border-radius: var(--border-radius);
     color: var(--white);
+    
+    
 }
 
 .header .Header-nav:hover {
@@ -256,6 +258,11 @@ body {
     width: 100%;
     height: 80%;
 }
+
+.element-image{
+    margin-bottom: -5px;
+}
+
 .element-description{
     background-color: var(--primario);
     height: 20%;
@@ -284,7 +291,7 @@ body {
 }
 /*? @suscribe */
 .glider{
-    overflow-y:visible;
+    overflow-x: hidden;
     margin-bottom: 10px ;
 }
 .glider-dot{
@@ -294,7 +301,7 @@ body {
 .glider-dot.active{
 
     background-color:  var(--primario);
-
+    
 }
 /*! End Team*/
 a, a:link {
@@ -320,6 +327,7 @@ a:hover {
 /*}*/
 
 /* selected link */
+
 
 a:active {
     color: #75e4d3;
@@ -353,7 +361,7 @@ a:active {
 }
 
 
-@media (min-width: 600px) {
+@media (min-width: 686px) {
     /* Mayor a 600 */
     .header .Header-main {
         width: 100%;
@@ -385,3 +393,9 @@ a:active {
         color: var(--white);
     }
 }
+
+/* @media (min-width: 701px){
+    h3 {
+        color: red;
+    }
+} */

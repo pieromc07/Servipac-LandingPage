@@ -10,7 +10,6 @@ const contact = null || document.getElementById('Contact');
 const footer = null || document.getElementById('Footer');
 
 
-
 const main = async () => {
     header.innerHTML = Header();
     var btnOpenPopup = document.getElementById('btn-open-popup')
@@ -26,15 +25,13 @@ const main = async () => {
         const glider = new Glider(document.querySelector('.slider-content'), {
             // Mobile-first defaults
             slidesToShow: 1, //render cantidad
-            slidesToScroll: 0,
-            // rewind: true,
+            rewind: true,
             dots: '.slider-pag',
-            // exactWidth: true,
-            scrollLock: true,
             arrows: {
                 prev: '.slider-prev',
                 next: '.slider-next'
             },
+            draggable: true,
             responsive:[{
 
             }]
