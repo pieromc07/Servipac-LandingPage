@@ -4,9 +4,8 @@ import Footer from './Components/Footer.js';
 import Contact from "./Components/Contact.js";
 import Team from "./Components/Team.js";
 import Banner from './Components/Banner.js'
-import Footer from './Components/Footer.js' //componete
-import List from './Components/List.js' 
-import Button from './Components/Button.js' 
+// import List from './Components/List.js' 
+// import Button from './Components/Button.js' 
 
 const header = null || document.getElementById('Header');
 const banner = null || document.getElementById('Banner');
