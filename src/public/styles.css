@@ -26,9 +26,9 @@
 }
 
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -63,6 +63,7 @@ body {
 /*End General*/
 
 .header .Header-main {
+
 	width: 100%;
 	height: 56px;
 	padding: 0 0.5rem;
@@ -300,6 +301,138 @@ body {
 	display: flex;
 	width: 30%;
 	justify-content: space-around;
+
+    width: 100%;
+    height: var(--header-h);
+    padding: 0 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--secundario);
+    backdrop-filter: blur(20px);
+    transition: all ease 0.5s;
+}
+
+.header.active .Header-main {
+    height: 100vh;
+    justify-content: start;
+    flex-direction: column;
+    background-color: var(--secundario);
+    position: fixed;
+    top: 0;
+}
+
+.Header-logo {
+    width: 100%;
+    min-height: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .Header-navs {
+    display: none;
+}
+
+.header.active .Header-navs {
+    display: grid;
+    grid-gap: 12px;
+    margin-top: 10%;
+}
+
+.header.active .Header-nav {
+    display: inline;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    padding: 16px;
+    border-radius: var(--border-radius);
+    color: var(--white);
+}
+
+.header .Header-nav:hover {
+    background: var(--white);
+    color: var(--secundario);
+}
+
+.Header-nav {
+    display: none;
+}
+
+.Header-nav a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.Header-nav:hover a {
+    text-decoration: none;
+    color: var(--secundario);
+}
+
+/* Banner */
+
+.Banner-main {
+    width: 100%;
+    height: var(--full-h);
+    margin: auto;
+    background: rgba(0, 94, 165, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Banner-content {
+    width: calc(100% - 24px);
+    max-width: 650px;
+    height: max-content;
+    color: var(--white);
+    display: grid;
+    grid-gap: 2rem;
+    justify-items: center;
+    align-content: center;
+}
+
+/* button */
+
+.button-link {
+    min-width: 80%;
+    max-width: 220px;
+    height: 48px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 38px;
+    background: var(--primary2);
+    color: var(--black);
+    cursor: pointer;
+    border: 1px solid var(--black);
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: all 0.4s;
+}
+.button-link:hover{
+    background: var(--primario);
+    color: var(--secundario);
+}
+
+/* text */
+.h1{
+    font: var(--h1);
+}
+.parrafe{
+    font: var(--parrafe);
+}
+
+/* UTILS */
+.flex-center{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-team-opacity {
@@ -458,5 +591,41 @@ a:active {
     .Footer .footer-content{
         max-width: 1200px;
         margin: 40px auto;
+
+@media (min-width: 700px) {
+    /* Mayor a 600 */
+    :root {
+        --header-h: 72px;
+        --h1: 700 3rem/normal Lato;
+        --h2: 700 2.25rem/normal Lato;
+        --h3: 400 1.75rem/normal Lato;
+        --h6: 400 1.125rem/normal Lato;
+        --lead: 400 1.375rem/9.375rem Lato;
+        --body: 400 1rem/9.375rem Lato;
+        --subtitulo: 700 1.125rem/normal Lato;
+        --parrafe: 700 1.325rem/normal Lato;
+    }
+    .header .Header-navs {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        grid-auto-flow: column;
+        justify-content: end;
+        align-items: center;
+        grid-gap: 12px;
+    }
+    .Header-logo .menu {
+        display: none;
+    }
+    .header .Header-nav {
+        height: 70%;
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        border-radius: var(--border-radius);
+        color: var(--white);
+        padding: 12px;
     }
 }

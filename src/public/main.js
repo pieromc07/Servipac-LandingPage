@@ -1,7 +1,12 @@
+
 import Header from './Components/Header.js';
 import Footer from './Components/Footer.js';
 import Contact from "./Components/Contact.js";
 import Team from "./Components/Team.js";
+import Banner from './Components/Banner.js'
+import Footer from './Components/Footer.js' //componete
+import List from './Components/List.js' 
+import Button from './Components/Button.js' 
 
 const header = null || document.getElementById('Header');
 const banner = null || document.getElementById('Banner');
@@ -17,6 +22,7 @@ const main = async () => {
         console.log("toogle")
         header.classList.toggle('active');
     })
+
     team.innerHTML = Team();
     contact.innerHTML = Contact();
     footer.innerHTML = Footer();
@@ -78,7 +84,8 @@ const main = async () => {
         }
         sliderAuto(glider, 3000)
     })
-
+    banner.innerHTML=Banner()
+    /*footer.innerHTML = Button({}); */
 }
 
 
