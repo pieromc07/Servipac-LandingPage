@@ -1,10 +1,11 @@
 
 const Team = () => {
     return (`
-     
-        <section class="Team">
+        <div class="section-container">
             <label class="title-section">EQUIPO</label>
             <hr class="separator"></hr>
+        </div>
+        <section class="Team">
             <div class="team-slider">
                 <div class="slider-conteiner">
                     <div class="slider-content">
@@ -28,7 +29,7 @@ const Team = () => {
                         </div>
                         <div class="slider-element">
                             <img class="element-image" src="img/picture-2.jpg" alt="picture 2"/>
-                            <div class="element-description">
+                            <div class="element-description card-team-opacity">
                             <h3>dfgsddfsdkhfs</h3>
                             <p>GERENTE</p>
                             <ul  class="description-social">
@@ -64,7 +65,7 @@ const Team = () => {
                         </div>
                         <div class="slider-element">
                             <img class="element-image" src="img/picture-4.jpg" alt="picture 4"/>
-                            <div class="element-description">
+                            <div class="element-description card-team-opacity">
                             <h3>dfgsddfsdkhfs</h3>
                             <p>GERENTE</p>
                             <ul  class="description-social">
@@ -101,7 +102,7 @@ const Team = () => {
                         </div>
                         <div class="slider-element">
                             <img class="element-image" src="img/picture-6.jpg" alt="picture 6"/>
-                            <div class="element-description">
+                            <div class="element-description card-team-opacity">
                                 <h3>dfgsddfsdkhfs</h3>
                                 <p>GERENTE</p>
                                 <ul  class="description-social">

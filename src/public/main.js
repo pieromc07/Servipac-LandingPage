@@ -33,7 +33,23 @@ const main = async () => {
             },
             draggable: true,
             responsive:[{
-
+                // screens greater than >= 700px
+                breakpoint: 700,
+                settings:{
+                    slidesToShow: 2,
+                }
+            },{
+                // screens greater than >= 867px
+                breakpoint: 867,
+                settings:{
+                    slidesToShow: 3,
+                }
+            },{
+                // screens greater than >= 1100px
+                breakpoint: 1100,
+                settings:{
+                    slidesToShow: 4,
+                }
             }]
         });
         function sliderAuto(slider, miliseconds) {
@@ -60,7 +76,6 @@ const main = async () => {
 
             slide();
         }
-
         sliderAuto(glider, 3000)
     })
 
