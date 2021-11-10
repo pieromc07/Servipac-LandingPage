@@ -2,14 +2,14 @@ const Header = () => {
     const view = `
         <div class="Header-main">
             <div class="Header-logo">
-                <h1><a href="#">cervipack</a></h1>
-                <button class="menu" id="btn-open-popup">
-                    x
-                </button>
+                <h1><a href="#">Servipac</a></h1>
+                <i class="menu fas fa-bars" id="btn-open-popup">
+                    
+                </i>
             </div>
             <ul class="Header-navs">
                 <li class="Header-nav">
-                <a href="#Mission/">Misión y visión</a>
+                <a href="#Mission/">Nosotros</a>
                 </li>
                 <li class="Header-nav">
                     <a href="#Services/">Servicios</a>

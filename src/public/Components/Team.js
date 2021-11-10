@@ -30,7 +30,7 @@ const Team = () => {
                         <div class="slider-element">
                             <img class="element-image" src="img/picture-2.jpg" alt="picture 2"/>
                             <div class="element-description card-team-opacity">
-                            <h3>dfgsddfsdkhfs</h3>
+                            <h3>CARLOS MONTANA</h3>
                             <p>GERENTE</p>
                             <ul  class="description-social">
                                 <li>
@@ -48,7 +48,7 @@ const Team = () => {
                         <div class="slider-element">
                             <img class="element-image" src="img/picture-3.jpg" alt="picture 3"/>
                             <div class="element-description">
-                            <h3>dfgsddfsdkhfs</h3>
+                            <h3>NIRA FLORES</h3>
                             <p>GERENTE</p>
                             <ul  class="description-social">
                                 <li>
@@ -66,7 +66,7 @@ const Team = () => {
                         <div class="slider-element">
                             <img class="element-image" src="img/picture-4.jpg" alt="picture 4"/>
                             <div class="element-description card-team-opacity">
-                            <h3>dfgsddfsdkhfs</h3>
+                            <h3>JOSE HEREDIA</h3>
                             <p>GERENTE</p>
                             <ul  class="description-social">
                                 <li>
@@ -85,7 +85,7 @@ const Team = () => {
                             <img class="element-image" src="img/picture-5.jpg" alt="picture 5"/>
                             
                             <div class="element-description">
-                            <h3>dfgsddfsdkhfs</h3>
+                            <h3>CARLOS PONCE</h3>
                             <p>GERENTE</p>
                             <ul  class="description-social">
                                 <li>
@@ -103,7 +103,7 @@ const Team = () => {
                         <div class="slider-element">
                             <img class="element-image" src="img/picture-6.jpg" alt="picture 6"/>
                             <div class="element-description card-team-opacity">
-                                <h3>dfgsddfsdkhfs</h3>
+                                <h3>SOFIA VERGARA</h3>
                                 <p>GERENTE</p>
                                 <ul  class="description-social">
                                     <li>

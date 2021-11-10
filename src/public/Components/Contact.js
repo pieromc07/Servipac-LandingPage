@@ -24,7 +24,7 @@ const Contact = () => {
                     </div>
                 </form>
                 <div class="Contact-image">
-                    <img src="/img/contact.svg" alt="imagen contacto" />
+                    <img src="img/contact.svg" alt="imagen contacto" />
                 </div>
             </div>
         </section>
