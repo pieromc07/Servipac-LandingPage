@@ -115,7 +115,9 @@ a:active {
 	font-size: 1.5rem;
 	/* margin: 15px 0; */
 }
-
+.outline{
+	border-bottom: 1px solid var(--white);
+}
 .separator {
 	background-color: var(--cbody);
 	height: 1px;
@@ -152,33 +154,54 @@ a:active {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	padding: 0 1rem;
 }
 
+.logo{
+	text-transform: uppercase;
+	color: var(--white);
+}
+.logo a{
+	font-size: 1.4rem;
+	color: var(--white);
+}
+.menu{
+	font-size: 1.2rem;
+}
 .header .Header-navs {
 	display: none;
 }
 
 .header.active .Header-navs {
-	display: grid;
-	grid-gap: 12px;
-	margin-top: 10%;
+	display: flex;
+	flex-wrap: wrap;
+	height: 60%;
+	align-items: center;
+	margin-top: 20px;
 }
 
 .header.active .Header-nav {
 	display: inline;
+	width: 100%;
 	display: flex;
+	justify-content: center;
 	align-items: center;
 	background: transparent;
 	padding: 16px;
+	border-bottom: 1px var(--white) solid;
 	border-radius: var(--border-radius);
 	color: var(--white);
+	text-transform: uppercase;
 }
 
 .header .Header-nav:hover {
-	background: var(--white);
-	color: var(--secundario);
-}
 
+	/* background: var(--white);
+	color: var(--secundario); */
+}
+.header .Header-nav { 
+	text-transform: uppercase;
+}
 .Header-nav {
 	display: none;
 }
@@ -186,11 +209,15 @@ a:active {
 .Header-nav a {
 	text-decoration: none;
 	color: var(--white);
+	font-size: 1rem;
 }
 
 .Header-nav:hover a {
 	text-decoration: none;
 	color: var(--secundario);
+	
+		color: #75e4d3;
+	
 }
 
 .menu {
@@ -471,6 +498,9 @@ a:active {
 
 /*! ========================== End Footer ==================*/
 /**========================== About Us ======================*/
+#AboutUs{
+	margin-top: 40px;
+}
 .AboutUs-section{
 	display: flex;
 	flex-wrap: wrap;
@@ -554,6 +584,12 @@ a:active {
 
 /*? RESPONSIVE HEADER */
 @media (min-width: 697px) {
+	.Header-logo{
+		padding-left: 30px;
+	}
+	.header .Header-navs{
+		padding-right: 30px ;
+	}
 	/* Mayor a 600 */
 	.header .Header-main {
 		width: 100%;
@@ -642,7 +678,7 @@ a:active {
 	.Service-card{
 		flex-basis: 45%;
 	}
-	
+
 	
 }
 
@@ -742,6 +778,13 @@ a:active {
 	.Service-card{
 		flex-basis: 45%;
 	}
+	.Header-logo{
+		padding-left: 40px;
+	}
+	.header .Header-navs{
+		padding-right: 40px ;
+	}
+
 }
 
 @media all and (min-width: 1024px) {
@@ -764,5 +807,11 @@ a:active {
 	/* *#### AboutUs ##### */
 	.AboutUs-section{
 		padding: 80px 100px;
+	}
+	.Header-logo{
+		padding-left: 50px;
+	}
+	.header .Header-navs{
+		padding-right: 50px ;
 	}
 }

@@ -18,46 +18,14 @@ const aboutUs = null || document.getElementById('AboutUs');
 const services = null || document.getElementById('Services');
 
 
-const collapse = () =>{
-    var b1 = document.getElementById('chck1')
-    var b2 = document.getElementById('chck2')
-    var b3 = document.getElementById('chck3')
-    var b4 = document.getElementById('chck4')
 
-    b1.addEventListener('click' , ()=>{
-        var icon1 = document.getElementById('icon1');
-        var ct1 = document.getElementById('ct1');
-        icon1.classList.toggle('icon-checked');
-        ct1.classList.toggle('tab-checked');
-    });
-
-    b2.addEventListener('click' , ()=>{
-        var icon2 = document.getElementById('icon2');
-        var ct2 = document.getElementById('ct2');
-        icon2.classList.toggle('icon-checked');
-        ct2.classList.toggle('tab-checked');
-    });
-
-    b3.addEventListener('click' , ()=>{
-        var icon3 = document.getElementById('icon3');
-        var ct3 = document.getElementById('ct3');
-        icon3.classList.toggle('icon-checked');
-        ct3.classList.toggle('tab-checked');
-    });
-
-    b4.addEventListener('click' , ()=>{
-        var icon4 = document.getElementById('icon4');
-        var ct4 = document.getElementById('ct4');
-        icon4.classList.toggle('icon-checked');
-        ct4.classList.toggle('tab-checked');
-    });
-}
 
 const main = async () => {
     header.innerHTML = Header();
     var btnOpenPopup = document.getElementById('btn-open-popup')
     btnOpenPopup.addEventListener('click', () => {
-        console.log("toogle")
+        let hl = document.getElementById('hl')
+        hl.classList.toggle('outline')
         header.classList.toggle('active');
     })
 
@@ -126,7 +94,7 @@ const main = async () => {
     })
     banner.innerHTML=Banner()
     /*footer.innerHTML = Button({}); */
-    collapse()
+  
 }
 
 
