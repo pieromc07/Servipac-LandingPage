@@ -45,18 +45,6 @@ const Team = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div class="slider-element">
-                            <img class="element-image" src="img/picture-5.jpg" alt="picture 3"/>
-                            <div class="element-description">
-                            <h3>NIRA FLORES</h3>
-                            <p>GERENTE</p>
-                            <ul class="description-social">
-                                    <li>
-                                        <i class="fab fa-linkedin"></i>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="slider-pag"></div>

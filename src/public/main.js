@@ -62,7 +62,7 @@ const main = async () => {
                 // screens greater than >= 1100px
                 breakpoint: 1024,
                 settings:{
-                    slidesToShow: 4,
+                    slidesToShow: 3,
                 }
             }]
         });
