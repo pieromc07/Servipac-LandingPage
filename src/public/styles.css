@@ -280,17 +280,17 @@ a:active {
 	align-items: center;
 	padding: 14px 38px;
 	background: var(--primary2);
-	color: var(--black);
+	color: var(--black) !important;
 	cursor: pointer;
 	border: 1px solid var(--black);
 	box-sizing: border-box;
 	border-radius: 4px;
 	transition: all 0.4s; 
 }
-.button-link:hover {
+/* .button-link:hover {
 	background: var(--primario);
 	color: var(--secundario);
-}
+} */
 /*! ==================== End Banner =======================*/
 
 /** =================== Team ==============================*/
@@ -299,7 +299,7 @@ a:active {
 	text-align: center;
 	margin: 20px 0px;
 	padding: 0 40px;
-	
+
 }
 
 .team-slider {
