@@ -344,6 +344,10 @@ a:active {
 	font-size: 1.2rem;
 }
 
+.description-social a i{
+	color: black;
+}
+
 .card-team-opacity {
 	background-color: var(--primary2);
 }

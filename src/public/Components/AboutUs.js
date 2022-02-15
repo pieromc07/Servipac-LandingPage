@@ -13,8 +13,7 @@ const AboutUs = () => {
                         MISIÓN
                     </div>
                     <div class="AboutUs-text">
-                        Lorem ipsum dasdas psadj shaj osahd asd hasod asiohd djsa diasdj asndias,
-                        lorem ipsum dasdas psadj shaj osahd asd hasod asiohd djsa diasdj asndias
+                    Corporación Servipac SAC empresa dedicada al mantenimiento de vehículos In house, teniendo como propósito generar la atención personalizada al cliente amoldándose a las necesidades que tu transporte requiere.
                     </div>
                 </div>
                 <div class="AboutUs-section-vision">
@@ -23,8 +22,7 @@ const AboutUs = () => {
                         VISIÓN 
                     </div>
                     <div class="AboutUs-text">
-                        Lorem ipsum dasdas psadj shaj osahd asd hasod asiohd djsa diasdj asndias,
-                        lorem ipsum dasdas psadj shaj osahd asd hasod asiohd djsa diasdj asndias
+                        Para el 2025 afianzar y mejorar el funcionamiento de soporte técnico y tecnológico, enfocándonos en la inserción participativa de las grandes ciudades, así mismo comprometidos en el apoyo social.
                     </div>
                 </div>
             </section>
