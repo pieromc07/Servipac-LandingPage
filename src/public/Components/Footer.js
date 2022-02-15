@@ -5,15 +5,13 @@ const Footer = () => {
                 <div class="Footer-info">
                     <div class="Footer-info__card">
                         <label class="Footer-info-title">Contacta con nosotros</label>
-                        <a href="#" class="Footer-info-link">Contacto</a>
-                        <a class="Footer-info-link">Suport</a>
-                        <a class="Footer-info-link">Destinations</a>
-                        <a class="Footer-info-link">Sponsorships</a>
+                        <a class="Footer-info-link">corp.servipac@gmail.com</a>
+                        <a class="Footer-info-link">+51 923 097 304</a>
                     </div>
                     <div class="Footer-info__card">
                         <label class="Footer-info-title">Sobre nosotros</label>
-                        <a class="Footer-info-link">Cómo funciona</a>
-                        <a class="Footer-info-link">Testimonios</a>
+                        <a href="#AboutUs" class="Footer-info-link">Misión y Visión</a>
+                        <a href="#Team" class="Footer-info-link">Nuestro Equipo</a>
                     </div>
                 </div>
                 <div class="Footer-rights">

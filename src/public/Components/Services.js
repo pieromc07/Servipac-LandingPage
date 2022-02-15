@@ -12,11 +12,11 @@ export const Services = () => {
                         <p class="card-title">Servicio de mantenimiento a otras empresas</p>
                            
                         <div class="tab-content" id="ct1">
-                        gestión de operaciones logísticas, manteamiento preventivo y correctivo para evitar contratiempos
+                        Gestión de operaciones logísticas, manteamiento preventivo y correctivo para evitar contratiempos
                         </div>
                     </div>
                     <div class="Service-card">
-                        <img src="img/s1.svg" alt="service image"/>
+                        <img src="img/s2.svg" alt="service image"/>
                         <p class="card-title">Servicio logístico</p>
                        
                         <div class="tab-content" id="ct1">
@@ -25,7 +25,7 @@ export const Services = () => {
                     </div>
 
                     <div class="Service-card">
-                        <img src="img/s1.svg" alt="service image"/>
+                        <img src="img/s3.svg" alt="service image"/>
                         <p class="card-title">Compra y venta de Repuestos</p>
                        
                         <div class="tab-content" id="ct1">
