@@ -5,7 +5,7 @@ import Contact from "./Components/Contact.js";
 import Team from "./Components/Team.js";
 import Banner from './Components/Banner.js';
 import AboutUs from './Components/AboutUs.js';
-import {Services} from './Components/Services.js';
+import { Services } from './Components/Services.js';
 // import List from './Components/List.js' 
 // import Button from './Components/Button.js' 
 
@@ -46,22 +46,22 @@ const main = async () => {
                 next: '.slider-next'
             },
             draggable: true,
-            responsive:[{
+            responsive: [{
                 // screens greater than >= 700px
                 breakpoint: 649,
-                settings:{
+                settings: {
                     slidesToShow: 2,
                 }
-            },{
+            }, {
                 // screens greater than >= 867px
                 breakpoint: 850,
-                settings:{
+                settings: {
                     slidesToShow: 3,
                 }
-            },{
+            }, {
                 // screens greater than >= 1100px
                 breakpoint: 1024,
-                settings:{
+                settings: {
                     slidesToShow: 3,
                 }
             }]
@@ -92,9 +92,129 @@ const main = async () => {
         }
         sliderAuto(glider, 3000)
     })
-    banner.innerHTML=Banner()
+    banner.innerHTML = Banner()
     /*footer.innerHTML = Button({}); */
-  
+
+    var form_contact = document.getElementById('form_contact');
+    form_contact.addEventListener('submit', (e) => {
+        e.preventDefault();
+        let name = form_contact.name.value;
+        let email = form_contact.email.value;
+        let msg = form_contact.msg.value;
+
+        if (name.trim() === '' || email.trim() === '' || msg.trim() === '') {
+            toastr["warning"]("Todos los campos son obligatorios", "warning")
+
+            toastr.options = {
+                "closeButton": false,
+                "debug": false,
+                "newestOnTop": false,
+                "progressBar": false,
+                "positionClass": "toast-top-right",
+                "preventDuplicates": false,
+                "onclick": null,
+                "showDuration": "300",
+                "hideDuration": "1000",
+                "timeOut": "5000",
+                "extendedTimeOut": "1000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            }
+            return;
+        }
+
+        if (!email.includes('@') || !email.includes('.')) {
+            
+            toastr["warning"]("El Email es incorrecto", "warning")
+
+            toastr.options = {
+                "closeButton": false,
+                "debug": false,
+                "newestOnTop": false,
+                "progressBar": false,
+                "positionClass": "toast-top-right",
+                "preventDuplicates": false,
+                "onclick": null,
+                "showDuration": "300",
+                "hideDuration": "1000",
+                "timeOut": "5000",
+                "extendedTimeOut": "1000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            }
+            return;
+        }
+
+        const data = {
+            name,
+            email,
+            msg
+        }
+
+        fetch('https://api-gneric-laravel.herokuapp.com/api/test', {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+            .then((res) => {
+
+                toastr["success"]("Mensaje enviado... nos contactaremos pronto.", "Confirmacion")
+
+                toastr.options = {
+                    "closeButton": false,
+                    "debug": false,
+                    "newestOnTop": false,
+                    "progressBar": false,
+                    "positionClass": "toast-top-right",
+                    "preventDuplicates": false,
+                    "onclick": null,
+                    "showDuration": "300",
+                    "hideDuration": "1000",
+                    "timeOut": "5000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                }
+
+                form_contact.name.value = '';
+                form_contact.email.value = '';
+                form_contact.msg.value = '';
+
+            }).catch((err) => {
+                toastr["error"]("Ups.. Surgio un error", "Error")
+
+                toastr.options = {
+                    "closeButton": false,
+                    "debug": false,
+                    "newestOnTop": false,
+                    "progressBar": false,
+                    "positionClass": "toast-top-right",
+                    "preventDuplicates": false,
+                    "onclick": null,
+                    "showDuration": "300",
+                    "hideDuration": "1000",
+                    "timeOut": "5000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                }
+            })
+    });
+
+
+
+
+
 }
 
 
